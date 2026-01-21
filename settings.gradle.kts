@@ -21,7 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "News Feed"
 include(":app")
-include(":core")
 include(":feature:feed:ui")
 include(":feature:feed:data")
 include(":feature:feed:domain")
+include(":core:network")

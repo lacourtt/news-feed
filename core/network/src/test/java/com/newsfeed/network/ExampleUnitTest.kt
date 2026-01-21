@@ -1,4 +1,4 @@
-package com.newsfeed.core
+package com.newsfeed.network
 
 import org.junit.Test
 
