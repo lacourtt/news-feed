@@ -46,4 +46,5 @@ dependencies {
 
     implementation(libs.hilt)
     ksp(libs.hiltcompiler)
+    implementation(libs.retrofit)
 }
