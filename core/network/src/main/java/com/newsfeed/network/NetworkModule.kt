@@ -14,7 +14,7 @@ object NetworkModule {
     @Singleton
     fun providesRetrofit(): Retrofit{
         return Retrofit.Builder()
-            .baseUrl("https://base.url")
+            .baseUrl("https://mastodon.social")
             .build()
     }
 }
