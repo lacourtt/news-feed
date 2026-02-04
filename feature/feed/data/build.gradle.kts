@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
 }
@@ -38,9 +39,10 @@ android {
 
 dependencies {
     implementation(libs.retrofit)
-    implementation(libs.kotlinserialization)
     implementation(libs.hilt)
     ksp(libs.hiltcompiler)
+    implementation(libs.paging3)
+    implementation(libs.kotlinx.serialization.json)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

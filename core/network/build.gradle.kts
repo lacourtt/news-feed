@@ -46,5 +46,7 @@ dependencies {
 
     implementation(libs.hilt)
     ksp(libs.hiltcompiler)
-    implementation(libs.retrofit)
+    api(libs.retrofit)
+    implementation(libs.retrofit.kotlinx.serialization)
+    api(libs.kotlinx.serialization.json)
 }

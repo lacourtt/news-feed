@@ -1,4 +1,4 @@
-package com.newsfeed.feed.data.dto
+package com.newsfeed.feed.domain.domainobjects
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

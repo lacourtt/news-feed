@@ -43,9 +43,15 @@ android {
     }
 }
 
+hilt {
+    enableAggregatingTask = false
+}
+
 dependencies {
     implementation(libs.hilt)
     ksp(libs.hiltcompiler)
+    implementation(libs.pagingcompose)
+    implementation(libs.composehilt)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -62,4 +68,9 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    implementation(project(":feature:feed:ui"))
+    implementation(project(":feature:feed:data"))
+    implementation(project(":feature:feed:domain"))
+    implementation(project(":core:network"))
 }
